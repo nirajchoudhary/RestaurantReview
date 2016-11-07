@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>	Restaurant Reviews</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CDN for bootstrap and JQuery -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- CDN for google charts -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<!-- CDN for jquery easy-pie-chart -->
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.js"></script>
+		<!-- local css and js -->
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="main.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-7 col-sm-8">
+					<textarea rows="5" cols="100" placeholder="Enter JSON Data" id="jsonData"></textarea>
+				</div>
+				<div class="col-xs-4 col-sm-3">
+					<a href="#" class="btn btn-primary" id="jsonUpload" style="padding-top:10px;">Upload</a>
+				</div>
+				<div class="col-xs-1" style="padding:0;">
+					<span id="glyphSpan" class="glyphicon"></span>
+				</div>
+			</div>
+			<center><h3><u>Paradise Hitech City hyderabad, India</u></h3></center>
+			<br>
+			<div class="row">
+				<div class="col-sm-5 box">
+					<div class="row">
+						<div class="col-xs-12">
+							<center><img alt="Zomato Logo" src="img/Zomato-New-Logo.png" height="100" width="60%"></center>
+						</div>
+						<div class="col-xs-12">
+							<center><a target="_blank" href="https://www.zomato.com/india">Go To Zomato Page</a></center><br>
+						</div>
+						<div class="col-xs-12">
+							<center>
+								<span class="starsValue" id="zomatoStarValue">0</span>
+								<span id="zomatoStarVotes">0 Vote</span>
+								<br><p></p>
+								<span class="stars" id="zomatoStar">0</span>
+							</center>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-sm-5 col-sm-offset-2 box">
+					<div class="row">
+						<div class="col-xs-12">
+							<center><img alt="tripAdvisor Logo" src="img/tripAdvisor.png" height="100" width="60%"></center>
+						</div>
+						<div class="col-xs-12">
+							<center><a target="_blank" href="https://www.tripadvisor.in/">Go To TripAdvisor Page</a></center><br>
+						</div>
+						<div class="col-xs-12">
+							<center>
+								<span class="starsValue" id="tripAdvisorStarValue">0</span>
+								<span id="tripAdvisorStarVotes">0 Vote</span>
+								<br><p></p>
+								<span class="stars" id="tripAdvisorStar">0</span>
+							</center>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+			<br>
+			<div class="row box">
+				<div class="col-sm-6">
+					<h4><center>Overall Stats [?]</center></h4>
+					<div id="pieChartDiv">
+						<img src="img/loading.gif" alt="Loading..." style="position:absolute;">
+					</div>
+				</div>
+				<div class="col-sm-6" style="padding-right:0;">
+					<h4><center>Sentiment Over Time [?]</center></h4>
+					<div id="areaChartDiv">
+						<img src="img/loading.gif" alt="Loading..." style="position:absolute;">
+					</div>
+					<br>
+				</div>
+				<br>
+			</div>
+			<br>
+			<div class="row">
+				<div class="panel-group" id="accordion">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

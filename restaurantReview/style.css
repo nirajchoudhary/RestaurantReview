@@ -1,0 +1,113 @@
+body {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #FFFFFF;
+	color: #787878;
+	padding: 20px;
+}
+
+textarea, a {
+	width: 100%;
+    height: 45px;
+    border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+	.glyphicon {
+		font-size: 100%;
+	}
+}
+
+.glyphicon {
+	line-height: 45px;
+	vertical-align: center;
+	font-size: 150%;
+}
+
+.box {
+	border-color: #787878;
+	border-style: solid;
+	border-radius: 7px;
+	border-width: 1px;
+}
+
+span.starsValue {
+	background-color: green;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 5px 7px;
+}
+
+span.stars, span.stars span {
+	display: block;
+	background: url(img/stars.png) 0 -16px repeat-x;
+	width: 80px;
+	height: 16px;
+}
+span.stars span {
+	background-position: 0 0;
+	float: left;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.grey {
+	color: grey;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-4, .col-sm-5, .col-sm-6 {
+	margin-top: 10px;
+}
+
+#pieChartDiv, #areaChartDiv {
+	width: 100%;
+	height: 400px;
+}
+
+.panel-heading {
+	background-color: #FFFFFF!important;
+	border-radius: 7px!important;
+}
+
+.panel-body {
+	background-color: #FDFDFD!important;
+	border-radius: 7px!important;
+}
+
+.panel {
+	border-color: #787878!important;
+	border-style: solid!important;
+	border-radius: 7px!important;
+	border-width: 1px!important;
+}
+
+.posDiv {
+	float: left;
+	background-color: green;
+	height: 20px;
+	border-radius: 3px 0 0 3px;
+}
+
+.negDiv {
+	float: left;
+	background-color: red;
+	height: 20px;
+	border-radius: 0 3px 3px 0;
+}
+
+.easyPieChart {
+	position: relative!important;
+	text-align: center!important;
+}
+
+.easyPieChart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
