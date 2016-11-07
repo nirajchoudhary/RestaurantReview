@@ -10,12 +10,8 @@ http://www.itstop10.com/mobiles/moto-g-plus-4th-gen_reviews-gist
 
 Ask user to Enetr json Data and based on json data populate the UI dynamically.
 
-Used: jquery, bootstarp, jquery-easy-pie-chart for the following types of chart
+Used: jquery, bootstarp, jquery-easy-pie-chart for the small pie chart file 1.1
 
-/home/mindfire/Pictures/Screenshot from 2016-11-07 11:45:11.png
+also used google pie and area chart for file 1.2
 
-also used google pie and area chart for 
-/home/mindfire/Pictures/Screenshot from 2016-11-07 11:48:06.png
-
-comlete screenshots:
-/home/mindfire/Pictures/Screenshot from 2016-11-07 11:50:31.png
+comlete screenshots: file 1.3
